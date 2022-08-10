@@ -1,0 +1,10 @@
+fieldset {
+    display: grid;
+    width: 20%;
+    grid-template-columns: 1fr 5fr;
+}
+
+.close {
+    color: red;
+    cursor: pointer;
+}
