@@ -13,25 +13,19 @@ form.onsubmit = (e) => {
     main(data);
 }
 
-// for (x of document.querySelectorAll(".close")) {
-//     x.onclick = (e) => {
-//         e.target.parentElement.remove();
-//         console.log("lmao")
-//     }
-// }
 
 function main(d) {
+    // Refactor me..... eventually
     let yearly = parseFloat(d.max.value) - parseFloat(d.pending.value);
     let ded = parseFloat(d.ded.value);
 
     let pay = 0;
     for (ent of document.querySelectorAll(".procedure")) {
         let p = parseFloat(ent.children[3].value) / 100;
-        let f = parseFloat(ent.children[1].value);
+        let f = parseFloat(ent.children[1].value) - ded;
+        ded = 0;
         pay += p * f;
     }
-
-    pay -= ded;
 
     if (pay > yearly) {
         pay = yearly;
