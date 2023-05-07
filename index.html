@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Insurance Copay Calculator</title>
+    <title>Insurance Copay Calculator 2.0</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -17,23 +17,23 @@
             <fieldset>
                 <legend>Insurance Info</legend>
                 <input type="tel" name="Remaining Max" id="max" />
-                <label for="Remaining Max">Remaining Max</label>
+                <label for="Remaining Max">*Remaining Max</label>
                 <input type="text" name="Pending Claims" id="pending" />
                 <label for="Pending Claims">Pending Claims</label>
                 <input type="text" name="Deductible" id="ded" />
-                <label for="Deductible">Deductible</label>
+                <label for="Deductible">*Deductible</label>
             </fieldset>
             <fieldset class="procedure">
                 <legend>Procedure Info</legend>
                 <input type="text" name="Fee" id="fee">
-                <label for="Fee">Fee</label>
+                <label for="Fee">*Fee</label>
                 <input type="text" name="Percent" id="perc">
-                <label for="Percent">Percent</label>
-                <p class="close"  onclick="this.parentElement.remove()" >✖</p>
+                <label for="Percent">*Percent</label>
+                <p class="close" onclick="this.parentElement.remove()">✖</p>
             </fieldset>
         </form>
         <input type="submit" value="Calculate" id="submit" form="Data">
-        <button id="addSection" onclick="add()" >Add</button>
+        <button id="addSection" onclick="add()">Add</button>
         <p id="output"></p>
     </div>
 </body>

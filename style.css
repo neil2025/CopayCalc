@@ -1,10 +1,15 @@
 fieldset {
-    display: grid;
-    width: 20%;
-    grid-template-columns: 1fr 5fr;
+  display: grid;
+  width: 20%;
+  grid-template-columns: 1fr 5fr;
 }
 
 .close {
-    color: red;
-    cursor: pointer;
+  color: red;
+  cursor: pointer;
+}
+
+input {
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
